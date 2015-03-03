@@ -1,0 +1,16 @@
+<modification>
+
+	<id>Hide Sub Categories.</id>
+	<version>1.5.4</version>
+	<vqmver>2.1.6</vqmver>
+	<author>Bogdan-Ioan BRUDIU</author>
+
+
+
+	<file name="catalog/view/theme/*/template/product/category.tpl">
+		<operation>
+			<search position="replace" ><![CDATA[<?php if ($categories) { ?>]]></search>
+			<add><![CDATA[<?php if (0) { ?>]]></add>
+		</operation>
+	</file>
+</modification>
